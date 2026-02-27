@@ -42,7 +42,7 @@ const handleCopytext = () =>{
   <textarea className="form-control" id="myBox" rows="5" value={text} onChange={handleUpChange}></textarea>
 </div>
 <button className="btn btn-outline-primary mx-2" onClick={handleUpCase}>Convert to UpperCase</button>
-<button className="btn btn-outline-warning mx-2" onClick={handleLoCase}>Convert to UpperCase</button>
+<button className="btn btn-outline-warning mx-2" onClick={handleLoCase}>Convert to LowerCase</button>
 <button className="btn btn-outline-dark mx-2" onClick={handleClear}>Clear Text</button>
 <button className="btn btn-outline-success mx-2" onClick={changeCase}>Change Case</button>
 <button className="btn btn-outline-danger mx-2" onClick={removeSpace}>Remove Spaces</button>
