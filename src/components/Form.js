@@ -38,15 +38,15 @@ const handleCopytext = () =>{
     <>
     <div className="container py-2"><h1 className='text-center head'>{props.heading}</h1></div>
 <div className="mb-3 my-5">
-<h2>{props.label}</h2>
+<label htmlFor="myBox" className="form-label h2">{props.label}</label>
   <textarea className="form-control" id="myBox" rows="5" value={text} onChange={handleUpChange}></textarea>
 </div>
 <button className="btn btn-outline-primary mx-2" onClick={handleUpCase}>Convert to UpperCase</button>
-<button className="btn btn-outline-warning mx-2" onClick={handleLoCase}>Convert to UpperCase</button>
+<button className="btn btn-outline-warning mx-2" onClick={handleLoCase}>Convert to LowerCase</button>
 <button className="btn btn-outline-dark mx-2" onClick={handleClear}>Clear Text</button>
-<button className="btn btn-outline-success mx-2" onClick={changeCase()}>Change Case</button>
-<button className="btn btn-outline-danger mx-2" onClick={removeSpace()}>Remove Spaces</button>
-<button className="btn btn-outline mx-2" onClick={handleCopytext()}>Copy Text</button>
+<button className="btn btn-outline-success mx-2" onClick={changeCase}>Change Case</button>
+<button className="btn btn-outline-danger mx-2" onClick={removeSpace}>Remove Spaces</button>
+<button className="btn btn-outline mx-2" onClick={handleCopytext}>Copy Text</button>
 
 <div className="container">
 <h2 className="py-3">Your Text Summary :</h2>
